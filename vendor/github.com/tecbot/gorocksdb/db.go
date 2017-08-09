@@ -96,7 +96,7 @@ func OpenDbColumnFamilies(
 	db := C.rocksdb_open_column_families(
 		opts.c,
 		cName,
-		C.int(numColumnFamilies),
+		C.int32(numColumnFamilies),
 		&cNames[0],
 		&cOpts[0],
 		&cHandles[0],
